@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/presta1/PRS001/themes/coolkid/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="3ffb09957bf335455765ddd527fbeb4e">
+        <source>Subscribe now to get $20 off on any product</source>
+        <target>Subscribe now to get $20 off on any product</target>
+        <note>Context:
+File: /var/www/html/presta1/PRS001/themes/coolkid/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:30</note>
+      </trans-unit>
+      <trans-unit id="d5b0d62f5a072bf73e621a3ccd83a2ec">
+        <source>editors now use Lorem ipsum as model text, and a search</source>
+        <target>editors now use Lorem ipsum as model text, and a search</target>
+        <note>Context:
+File: /var/www/html/presta1/PRS001/themes/coolkid/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:31</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

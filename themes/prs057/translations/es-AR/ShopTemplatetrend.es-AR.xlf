@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/presta/PRS049/themes/PRS049/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" source-language="es-AR" target-language="es-AR" datatype="plaintext">
+    <body>
+      <trans-unit id="ffb7e666a70151215b4c55c6268d7d72">
+        <source>Newsletter</source>
+        <target>Newsletter</target>
+        <note>Context:
+File: /var/www/html/presta/PRS049/themes/PRS049/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:30</note>
+      </trans-unit>
+      <trans-unit id="fc8544cae48d7d031c17ab6b2eaaafc1">
+        <source>Enter your email address to receive</source>
+        <target>Enter your email address to receive</target>
+        <note>Context:
+File: /var/www/html/presta/PRS049/themes/PRS049/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:43</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/presta/PRS049/themes/PRS049/templates/_partials/footer.tpl" source-language="es-AR" target-language="es-AR" datatype="plaintext">
+    <body>
+      <trans-unit id="7601c8e861088bd27255e18afaefab6b">
+        <source>%copyright% %year% - Ecommerce software by %prestashop%</source>
+        <target>%copyright% %year% - Ecommerce software by %prestashop%</target>
+        <note>Context:
+File: /var/www/html/presta/PRS049/themes/PRS049/templates/_partials/footer.tpl:52</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

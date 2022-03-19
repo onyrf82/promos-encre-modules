@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/presta/PRS662/themes/PRS662/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" source-language="fr-CA" target-language="fr-CA" datatype="plaintext">
+    <body>
+      <trans-unit id="7056de20d9b9e3bfcb59073b4d382f2a">
+        <source>Subscribe now  to get 20* off on any Product</source>
+        <target>Subscribe now  to get 20* off on any Product</target>
+        <note>Context:
+File: /var/www/html/presta/PRS662/themes/PRS662/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:36</note>
+      </trans-unit>
+      <trans-unit id="b5cda36caa05864a6863af6061de5b32">
+        <source>editors now use Lorem Ipsum as model text, and a search</source>
+        <target>editors now use Lorem Ipsum as model text, and a search</target>
+        <note>Context:
+File: /var/www/html/presta/PRS662/themes/PRS662/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:37</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

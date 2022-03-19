@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/presta1/PRS057/themes/prs057/modules/ps_shoppingcart/ps_shoppingcart.tpl" source-language="ta-IN" target-language="ta-IN" datatype="plaintext">
+    <body>
+      <trans-unit id="05800481f284f11f03c387ef04fd8b2a">
+        <source>shopping_cart</source>
+        <target>shopping_cart</target>
+        <note>Context:
+File: /var/www/html/presta1/PRS057/themes/prs057/modules/ps_shoppingcart/ps_shoppingcart.tpl:29</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/var/www/html/presta1/PRS057/themes/prs057/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" source-language="ta-IN" target-language="ta-IN" datatype="plaintext">
+    <body>
+      <trans-unit id="ffb7e666a70151215b4c55c6268d7d72">
+        <source>Newsletter</source>
+        <target>Newsletter</target>
+        <note>Context:
+File: /var/www/html/presta1/PRS057/themes/prs057/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:43</note>
+      </trans-unit>
+      <trans-unit id="fc8544cae48d7d031c17ab6b2eaaafc1">
+        <source>Enter your email address to receive</source>
+        <target>Enter your email address to receive</target>
+        <note>Context:
+File: /var/www/html/presta1/PRS057/themes/prs057/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:44</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/var/www/html/presta1/PRS057/themes/prs057/templates/catalog/_partials/miniatures/product.tpl" source-language="ta-IN" target-language="ta-IN" datatype="plaintext">
+    <body>
+      <trans-unit id="0a18f0aa51f30f1107495bf639caf16c">
+        <source>Shop Now</source>
+        <target>Shop Now</target>
+        <note>Context:
+File: /var/www/html/presta1/PRS057/themes/prs057/templates/catalog/_partials/miniatures/product.tpl:69</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

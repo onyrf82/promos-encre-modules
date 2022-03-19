@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/demo/prestashop/PRS322/themes/PRS322/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="ffb7e666a70151215b4c55c6268d7d72">
+        <source>Newsletter</source>
+        <target>Bulletin</target>
+        <note>Context:
+File: /var/www/demo/prestashop/PRS322/themes/PRS322/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:30</note>
+      </trans-unit>
+      <trans-unit id="026a0f4037d4110e4d0183559785d653">
+        <source>Sign Up For The Latest Deals and</source>
+        <target>Sign Up For The Latest Deals and</target>
+        <note>Context:
+File: /var/www/demo/prestashop/PRS322/themes/PRS322/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:31</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/var/www/demo/prestashop/PRS322/admintrend" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="fc8544cae48d7d031c17ab6b2eaaafc1">
+        <source>Enter your email address to receive</source>
+        <target>Entrez votre adresse électronique pour recevoir</target>
+        <note>Context:
+File: /var/www/demo/prestashop/PRS322/admintrend:</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
