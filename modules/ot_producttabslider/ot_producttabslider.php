@@ -53,9 +53,9 @@ class Ot_Producttabslider extends Module {
 		$this->author = 'OrthoTheme';
 	    $this->secure_key = Tools::encrypt($this->name);
         $this->bootstrap = true;
-        
+
 		parent :: __construct();
-		
+
         $this->displayName 	= $this->trans('Ortho Theme - Product Tabs Slider', array(), 'Modules.Producttabslider.Admin');
 		$this->description 	= $this->trans('Displays Products tab as Grid or Slider.', array(), 'Modules.Producttabslider.Admin');
         $this->ps_versions_compliancy = array('min' => '1.7.1.0', 'max' => _PS_VERSION_);
@@ -63,9 +63,9 @@ class Ot_Producttabslider extends Module {
         $this->templateFile = 'module:ot_producttabslider/views/templates/hook/ot_producttabslider.tpl';
 
 	}
-	
+
 	public function install() {
-	
+
         Configuration::updateValue('OT_HOME_PRODUCTTAB_RANDOMIZE', true);
         Configuration::updateValue('OT_HOME_PRODUCTTAB_SPEED', 3000);
         Configuration::updateValue('OT_HOME_PRODUCTTAB_NAV', true);
@@ -91,7 +91,7 @@ class Ot_Producttabslider extends Module {
     {
         parent::_clearCache($this->templateFile);
     }
-    
+
     public function hookDisplayHeader($params){
 	   $config = $this->getConfigFieldsValues();
 		Media::addJsDef(
@@ -107,8 +107,8 @@ class Ot_Producttabslider extends Module {
 		$this->context->controller->registerStylesheet('modules-otproducttabslider-animatedelay', 'modules/'.$this->name.'/views/css/animate.delay.css', ['media' => 'all', 'priority' => 190]);
 		$this->context->controller->registerStylesheet('modules-otproducttabslider-animate', 'modules/'.$this->name.'/views/css/animate.min.css', ['media' => 'all', 'priority' => 195]);
     }
-    
-	
+
+
 	protected function getBestSellers()
     {
         if (Configuration::get('PS_CATALOG_MODE')) {
@@ -163,7 +163,7 @@ class Ot_Producttabslider extends Module {
 
         return $products_for_template;
     }
-	
+
 	public function getProducts($params=null, $type = null){
 		//global $cookie;
 		$assembler = new ProductAssembler($this->context);
@@ -188,9 +188,9 @@ class Ot_Producttabslider extends Module {
 				->setResultsPerPage($nb)
 				->setPage(1)
 			;
-		
+
 			$query->setSortOrder(new SortOrder('product', 'position', 'asc'));
-			
+
 			$context = new ProductSearchContext($this->context);
 		   $category = new Category((int) Configuration::get('HOME_FEATURED_CAT'));
 		   if(!$category) $category = 2;
@@ -203,25 +203,25 @@ class Ot_Producttabslider extends Module {
 				$context,
 				$query
 			);
-			
+
 			$products = $result->getProducts();
-		
+
 		}else if($type == 2) {
 			//New Products
 			 $products = Product::getNewProducts((int) $this->context->language->id, 0, $nb);
-			 
+
 		}else if($type == 3) {
 			//Special Products
-			$products = Product::getPricesDrop((int)$this->context->language->id, 0, ((int)$nb ? $nb : 20), false);	
+			$products = Product::getPricesDrop((int)$this->context->language->id, 0, ((int)$nb ? $nb : 20), false);
 		}elseif($type ==4) {
 			$products = $this->getBestSellers($params);
 			//Bestseller Products
-		}	
-		
-		$products_for_template = [];			
-		if(count($products)>0) {
+		}
+
+		$products_for_template = [];
+		if(count($products) > 0  && is_array($products)) {
 			foreach($products as $rawProduct) {
-				
+
 					 $products_for_template[] = $presenter->present(
 						$presentationSettings,
 						$assembler->assembleProduct($rawProduct),
@@ -229,15 +229,15 @@ class Ot_Producttabslider extends Module {
 					);
 			}
 		}
-		return $products_for_template; 
-		
+		return $products_for_template;
+
 	}
-    
+
 	public function hookDisplayHome($params) {
-		
+
 	        $nb = Configuration::get($this->name . '_p_limit');
 			$category = new Category(Context::getContext()->shop->getCategory(), (int) Context::getContext()->language->id);
-			
+
 			$productTabslider = array();
 			if((int) Configuration::get('OT_HOME_PRODUCTTAB_NEW')) {
 				$newProducts = $this->getProducts($params,2);
@@ -262,15 +262,15 @@ class Ot_Producttabslider extends Module {
             $this->smarty->assign(array(
                 'add_prod_display' => Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY'),
 				'tab_effect' => Configuration::get($this->name . '_tab_effect'),
-	
+
             ));
-			
+
 			if(count($productTabslider) < 1) return;
 			$this->context->smarty->assign('productTabslider', $productTabslider);
 			$this->context->smarty->assign('config', $options);
 			return $this->display(__FILE__, 'views/templates/hook/ot_producttabslider.tpl');
 	}
-	
+
 
 	public function hookDisplayHomeBottom($params) {
 		return $this->hookDisplayHome($params);
@@ -282,8 +282,8 @@ class Ot_Producttabslider extends Module {
 	public function hookDisplayTopColumn($params) {
 		return $this->hookDisplayHome($params);
 	}
-	
-	
+
+
 	  public function getContent() {
         //$output = '<h2>' . $this->displayName . '</h2>';
         $output = '';
@@ -329,8 +329,8 @@ class Ot_Producttabslider extends Module {
 		Configuration::updateValue('OT_HOME_PRODUCTTAB_SPEED', Tools::getValue('OT_HOME_PRODUCTTAB_SPEED'));
 
     }
-	
-	
+
+
 	public function renderForm()
 	{
 		$fields_form = array(
@@ -477,7 +477,7 @@ class Ot_Producttabslider extends Module {
 				)
 			),
 		);
-		
+
 		$lang = new Language((int)Configuration::get('PS_LANG_DEFAULT'));
 
 		$helper = new HelperForm();
@@ -516,15 +516,15 @@ class Ot_Producttabslider extends Module {
             'OT_HOME_PRODUCTTAB_ROWS' => Tools::getValue('OT_HOME_PRODUCTTAB_ROWS', (int) Configuration::get('OT_HOME_PRODUCTTAB_ROWS')),
         );
     }
-	
+
 
 	/*private function _installHookCustomer(){
 		$hookspos = array(
 				'tabsProducts',
-			); 
+			);
 		foreach( $hookspos as $hook ){
 			if( Hook::getIdByName($hook) ){
-				
+
 			} else {
 				$new_hook = new Hook();
 				$new_hook->name = pSQL($hook);
@@ -535,25 +535,25 @@ class Ot_Producttabslider extends Module {
 		}
 		return true;
 	}*/
-	
+
 	public static function getBestSales($id_lang, $page_number = 0, $nb_products = 10, $order_by = null, $order_way = null)
 	{
 		if ($page_number < 0) $page_number = 0;
 		if ($nb_products < 1) $nb_products = 10;
 		$final_order_by = $order_by;
-		$order_table = ''; 		
+		$order_table = '';
 		if (is_null($order_by) || $order_by == 'position' || $order_by == 'price') $order_by = 'sales';
 		if ($order_by == 'date_add' || $order_by == 'date_upd')
-			$order_table = 'product_shop'; 				
+			$order_table = 'product_shop';
 		if (is_null($order_way) || $order_by == 'sales') $order_way = 'DESC';
 		$groups = FrontController::getCurrentCustomerGroups();
 		$sql_groups = (count($groups) ? 'IN ('.implode(',', $groups).')' : '= 1');
 		$interval = Validate::isUnsignedInt(Configuration::get('PS_NB_DAYS_NEW_PRODUCT')) ? Configuration::get('PS_NB_DAYS_NEW_PRODUCT') : 20;
-		
+
 		$prefix = '';
 		if ($order_by == 'date_add')
 			$prefix = 'p.';
-		
+
 		$sql = 'SELECT p.*, product_shop.*, stock.out_of_stock, IFNULL(stock.quantity, 0) as quantity,
 					pl.`description`, pl.`description_short`, pl.`link_rewrite`, pl.`meta_description`,
 					pl.`meta_keywords`, pl.`meta_title`, pl.`name`,
