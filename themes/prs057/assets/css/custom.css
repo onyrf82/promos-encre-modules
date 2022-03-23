@@ -54,7 +54,7 @@ div#contact-link > a > span,
     margin-right: 0;
 }
 .top-menu .sub-menu ul[data-depth="1"] > li:first-child {
-    margin-left:0; 
+    margin-left:0;
 }
 .homeslider-container {
     margin-left: 50px;
@@ -146,7 +146,7 @@ ul.userinfo-toggle {
   font-size: 0;
 }
 .header-top #search_widget.search-widget form input[type="text"] {
-  
+
 }
 
 .header-top #search_widget.search-widget form input[type=text] {
@@ -272,7 +272,7 @@ h1.main-title {
   position: relative;
   text-align: left;
   text-transform: uppercase;
-  border-bottom: 1px solid #e1e1e1; 
+  border-bottom: 1px solid #e1e1e1;
 }
 div#_desktop_language_selector,
 div#_desktop_currency_selector {
@@ -280,20 +280,23 @@ div#_desktop_currency_selector {
   margin-bottom: 2px;
   margin-top: 6px;
 }
-div#search_widget {
+/*div#search_widget {
     margin: 19px 15px;
     position: relative;
-}
+}*/
 div#_desktop_user_info {
     background-color: #5d5d5d;
     padding: 18px 17px 19px 17px;
+    min-width: 0 !important;
+    overflow: unset !important;
 }
 div#search_widget {
 	background-color: transparent;
+  padding: 18px 17px 19px 17px;
 }
 div#_desktop_cart {
     background-color: #21bf73;
-    padding: 18px 17px 19px 17px;	
+    padding: 18px 17px 19px 17px;
 }
 /* footer start */
 
@@ -317,7 +320,7 @@ div#_desktop_cart {
 }
 .newstitle-inner {
   background: transparent none repeat scroll 0 0;
-} 
+}
 .newsletter_inner {
     padding: 15px 0 0;
 }
@@ -1212,7 +1215,7 @@ section#special-products {
     margin: 11px 0px;
     font-size: 14px;
     color: #999999;
-}  
+}
 .list .thumbnail-container .addtocart-button {
     position: relative;
     opacity: 1;
@@ -1359,7 +1362,7 @@ div#_mobile_cart {
 	margin-bottom: 0;
 	display: inline-block;
 	vertical-align: middle;
-	
+
 }
 .social-iconfooter ul li {
 	position: relative;
@@ -2211,7 +2214,7 @@ div#footerbottom-text {
 }
 .social-iconfooter {
     width: 34%;
-}  
+}
 /*subbanner-hover-end */
 @media screen and (max-width: 1366px) {
 	.banner-top img {
@@ -2371,7 +2374,7 @@ div#footerbottom-text {
 @media screen and (max-width: 1260px) {
 	body {
 	    width: 1024px;
-	} 
+	}
 	.container {
 		max-width: 994px;
 	}
@@ -2530,7 +2533,7 @@ div#footerbottom-text {
     }
     #header .logo {
       padding-top: 4px;
-    }   
+    }
 }
 @media (max-width: 1001px) {
     #header .logo {
@@ -2545,7 +2548,7 @@ div#footerbottom-text {
     }
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
 	div#js-product-list-top .col-md-6 {
 		width: 100%;
 	}
@@ -2875,7 +2878,7 @@ div#footerbottom-text {
     }
     .thumbnail-container .product-description {
       bottom: 20px;
-    }  
+    }
     .hover-addtocart {
       margin-top: 9px;
     }
@@ -2932,7 +2935,7 @@ div#footerbottom-text {
     }
     .subbanner-common.subbannerpart2 {
         margin-bottom: 23px;
-    }   
+    }
     .top-menu .arrow > .dropdown-item::before {
         bottom: 0px;
     }
@@ -3040,7 +3043,7 @@ div#footerbottom-text {
         float: none;
         width: 100%;
     }
-    
+
     .top-menu .sub-menu.collapse {
         margin-top: 10px;
     }
@@ -3125,7 +3128,7 @@ div#footerbottom-text {
     }
     #index .blog_post_content_bottom {
       padding-top: 10px;
-    } 
+    }
     ul.payment-inner li a {
       padding: 0 8px;
     }
@@ -3266,12 +3269,12 @@ div#footerbottom-text {
         position: inherit;
     }
     .header-top #search_widget.search-widget:hover form input[type="text"],
-    .header-top #search_widget.search-widget.inputfocus form input[type="text"], 
+    .header-top #search_widget.search-widget.inputfocus form input[type="text"],
     .header-top #search_widget.search-widget:hover form input[type="text"]:focus{
         width: 100%;
     }
     .header-top #search_widget.search-widget form input[type="text"],
-    .header-top #search_widget.search-widget.inputfocus form input[type="text"], 
+    .header-top #search_widget.search-widget.inputfocus form input[type="text"],
     .header-top #search_widget.search-widget form input[type="text"]:focus{
         width: 100%;
         background:#e1e1e1;
