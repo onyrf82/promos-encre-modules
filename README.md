@@ -1,1 +1,1 @@
-# promos-encre-modules
+# promos-encre-modules & themes
