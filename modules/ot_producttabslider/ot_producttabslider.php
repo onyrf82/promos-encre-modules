@@ -219,7 +219,7 @@ class Ot_Producttabslider extends Module {
 		}
 
 		$products_for_template = [];
-		if(count($products) > 0  && is_array($products)) {
+		if(is_array($products)) {
 			foreach($products as $rawProduct) {
 
 					 $products_for_template[] = $presenter->present(
