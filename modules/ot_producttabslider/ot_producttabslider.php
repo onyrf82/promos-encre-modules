@@ -180,7 +180,7 @@ class Ot_Producttabslider extends Module {
 		    $this->context->getTranslator()
 		);
 		$nb = 12;
-		$products[] = null;
+		$products = array(null);
 
 		if($type == 1) {
 			//Feature Product
