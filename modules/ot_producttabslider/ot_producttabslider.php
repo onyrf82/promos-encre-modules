@@ -215,10 +215,10 @@ class Ot_Producttabslider extends Module {
 		}else if($type == 3) {
 			//Special Products
 			$products = Product::getPricesDrop((int)$this->context->language->id, 0, ((int)$nb ? $nb : 20), false);
-		}/*elseif($type ==4) {
+		}elseif($type ==4) {
 			$products = $this->getBestSellers($params);
 			//Bestseller Products
-		}*/
+		}
 
 		$products_for_template = [];
 		//$products = Product::getPricesDrop((int)$this->context->language->id, 0, ((int)$nb ? $nb : 20), false);
