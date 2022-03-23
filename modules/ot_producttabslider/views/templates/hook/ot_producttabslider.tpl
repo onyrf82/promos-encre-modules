@@ -29,17 +29,17 @@
   <h1 class="main-title">{l s='new arrivals' d='Modules.Featuredproducts.Shop'}</h1>
  <div class="homepage-products products">
 
-	<ul class="tabs"> 
+	<ul class="tabs">
 	{$count=0}
 	{foreach from=$productTabslider item=productTab name=otProductTab}
 		<li class="{$productTab.id} {if $smarty.foreach.otProductTab.first}first_item{elseif $smarty.foreach.otProductTab.last}last_item{else}{/if} item {if $count==0} active {/if}" rel="tab_{$productTab.id}">
-			{$productTab.name} 
+			{$productTab.name}
 		</li>
 			{$count= $count+1}
-	{/foreach}	
+	{/foreach}
 	</ul>
 	{$rows= $config['OT_HOME_PRODUCTTAB_ROWS']}
-	<div class="tab_container"> 
+	<div class="tab_container">
 	{foreach from=$productTabslider item=productTab name=otProductTab}
 			<div id="tab_{$productTab.id}" class="tab_content products">
 				<div class="ot-tabcontent">
@@ -48,16 +48,16 @@
 					{if $smarty.foreach.myLoop.index % $rows == 0 || $smarty.foreach.myLoop.first}
 						<div class="item">
 					{/if}
-					{include file="catalog/_partials/miniatures/product-slider.tpl" product=$product}	
+					{include file="catalog/_partials/miniatures/product-slider.tpl" product=$product}
 					{if $smarty.foreach.myLoop.iteration % $rows == 0 || $smarty.foreach.myLoop.last}
 						</div>
 					{/if}
 					{/foreach}
 					</div>
-				</div>	
+				</div>
 			</div>
-	{/foreach}	
-	
+	{/foreach}
+
 	</div>
 	</div>
 	</div>

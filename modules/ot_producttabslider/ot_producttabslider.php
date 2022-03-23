@@ -180,6 +180,8 @@ class Ot_Producttabslider extends Module {
 		    $this->context->getTranslator()
 		);
 		$nb = 12;
+		$products[] = null;
+
 		if($type == 1) {
 			//Feature Product
 			 $query = new ProductSearchQuery();
@@ -219,7 +221,7 @@ class Ot_Producttabslider extends Module {
 		}
 
 		$products_for_template = [];
-		if(is_array($products)) {
+		if(count($products)>0) {
 			foreach($products as $rawProduct) {
 
 					 $products_for_template[] = $presenter->present(
